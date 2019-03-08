@@ -44,6 +44,11 @@ namespace MmPort
         /// </summary>
         public int ReceivedBytesThreshold { get; set; }
 
+        /// <summary>
+        /// 通信方式
+        /// </summary>
+        public COMMUNICATION_TYPE communicationType { get; set; }
+
         public MmConfiguration()
         {
         }

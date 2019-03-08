@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MmPort
 {
-    public class DataReceiveHander
+    public class MmDataReceiveHander
     {
         public virtual void test(byte[] data)
         {

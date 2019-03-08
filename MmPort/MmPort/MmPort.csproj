@@ -39,9 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataReceiveHander.cs" />
+    <Compile Include="MmDataReceiveHander.cs" />
     <Compile Include="MmConfiguration.cs" />
-    <Compile Include="MnPort.cs" />
+    <Compile Include="MmModbus.cs" />
+    <Compile Include="MmSerialPort.cs" />
+    <Compile Include="MmUtils.cs" />
+    <Compile Include="MmPortManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
