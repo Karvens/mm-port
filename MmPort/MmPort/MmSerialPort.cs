@@ -12,6 +12,17 @@ namespace MmPort
         public event UpdateData updateSerialData;
 
 
+        static System.Timers.Timer timerTOA; //timerTimeOut A 总体观察（暂无数据时）
+
+        byte[] buff; //临时数组，存放每次的返回结果
+
+        int delayTime; //允许的超时次数
+
+        int offset; //当前偏移量
+
+        int bytesNum; //本次读取到的数量
+
+
         public MmSerialPort(MmConfiguration mmConfiguration)
         {
             if (mmConfiguration.isAllCustom)

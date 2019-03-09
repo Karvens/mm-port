@@ -45,6 +45,16 @@ namespace MmPort
         public int ReceivedBytesThreshold { get; set; }
 
         /// <summary>
+        /// 是否开启超时处理
+        /// </summary>
+        public bool openTimeOut { get; set; }
+
+        /// <summary>
+        /// 超时时间 ms
+        /// </summary>
+        public int timeOutTime { get; set; }
+
+        /// <summary>
         /// 通信方式
         /// </summary>
         public COMMUNICATION_TYPE communicationType { get; set; }
