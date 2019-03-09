@@ -5,7 +5,7 @@ MmPort旨在简化工业控制领域上位机通信模块的工作，目前提�
 ## 文件说明
 ```
 MmConfiguration.cs  --> 配置类
-MmDataReceiveHander.cs  --> 串口接收事件，集成该类，重写数据接收方法，即可自定义处理数据。
+MmDataReceiveHander.cs  --> 串口接收事件，继承该类，重写数据接收方法，即可自定义处理数据。
 MmModbus.cs  --> modbus组件，提供modbus协议的多种读写功能。
 MmPortManager.cs  --> 串口对象管理器，通过构造函数传入配置类配置，通过该类的实例方法DefaultMmPortManager获取串口对象。 
 MmSerialPort.cs --> 普通串口协议组件，支持自定义协议，包头，数据长度，校验，超时，重发等。
